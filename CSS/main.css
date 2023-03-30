@@ -118,6 +118,22 @@ li a {
 		1px 1px 0 #000;
 }
 
+.heroText h2 {
+	mix-blend-mode: difference;
+	text-transform: uppercase;
+	text-shadow:
+	.1px 0px .25px #f7903b, .2px 0px .25px #f7903b, .4px 0px .25px #f7903b,
+	
+	.1px 0px 0px #d47b33, .2px 0px 0px #d47b33, .4px 0px 0px #d47b33,
+	.1px 0px .1px #d47b33, .2px 0px .1px #d47b33, .4px 0px .1px #d47b33,
+	.1px 0px 2px #d47b33, .2px 0px 2px #d47b33, .4px 0px 2px #d47b33,
+	
+	.1px 0px 1px #b0662a, .2px 0px 1px #b0662a, .4px 0px 5px #b0662a,
+	.1px 0px 5px #b0662a, .2px 0px 20px #b0662a, .4px 0px 10px #b0662a,
+	.1px 0px 10px #b0662a, .2px 0px 30px #b0662a, .4px 0px 10px #b0662a;
+	animation: myAnim 3s infinite alternate;
+	}
+
 .heroImg {
 	padding: 50px;
 	grid-column: 1/1;
@@ -131,7 +147,12 @@ li a {
 	border-right: 10px solid #FF10F0;
 	border-bottom: 10px solid cyan;
 	border-left: 10px solid cyan;
+	box-shadow:
+	0 0 5px 3px black,
+	0 0 5px 3px black,
+	0 0 7px 3px black;
 }
+
 
 .card {
 	margin-top: 20px;
@@ -253,7 +274,26 @@ li a {
 	inset 0 0 5px 3px #cfcc3a,
 	inset 0 0 7px 3px #f7f448;
 	border-radius: 10px;
-	
+	border: 1px solid #f7f448;
+	animation: myAnim 5s infinite alternate;
+}
+
+@keyframes myAnim {
+	40%{
+		opacity: 1;
+	}	
+	42%{
+		opacity: 0.8;
+	}	
+	43%{
+		opacity: 1;
+	}	
+	45%{
+		opacity: 0.5;
+	}	
+	46%{
+		opacity: 1;
+	}
 }
 
 .yearTitle {
@@ -282,6 +322,7 @@ li a {
 	inset 0 0 3.84px 1.92px #d47b33,
 	inset 0 0 4.8px 1.92px #f7903b;
 	border-radius: 10px;
+	animation: myAnim 6s infinite alternate;
 }
 
 .modCard h3 {
@@ -360,14 +401,15 @@ li a {
 	grid-column: 1/1;
 }
 
-.break {
-	grid-column: 1/13;
-	height: 50px;
-	background-image: url('../Images/heroBG.jpg');
-	background-size: 100% 100%;
-	margin-bottom: 20px;
+.TBA {
+	padding: 100px;
+	grid-column: 1/1;
+	justify-self: center;
 }
 
+.TBA h2 {
+	padding: 10px;
+}
 /*. Footer CSS */
 .footer {
 	margin-top: 20px;
@@ -430,6 +472,8 @@ li a {
 		margin-left: -20px;
 		grid-column: 4/10;
 	}
+	
+	.TBA { grid-column: 1/13;}
 	
 }
 /* Hamburger Icon */
